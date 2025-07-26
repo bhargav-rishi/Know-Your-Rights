@@ -5,6 +5,7 @@ langchain-community
 langchain-huggingface
 huggingface-hub
 transformers
+sentence-transformers
 pymupdf
 torch
 faiss-cpu
