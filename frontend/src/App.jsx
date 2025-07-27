@@ -132,7 +132,7 @@ const handleFileUpload = async (e) => {
     setUploadMessage("📤 Uploading...");
     setUploadedFiles(files);
 
-    await axios.post("http://localhost:8000/upload", formData);
+    await axios.post(api, formData);
 
     setUploadSuccess(true);
     setUploadMessage("✅ Upload successful!");
