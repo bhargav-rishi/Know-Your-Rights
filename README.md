@@ -72,30 +72,6 @@ npm install
 npm run dev
 ```
 
----
-
-## Repository Structure
-<pre>
-Know-Your-Rights/
-├── backend/
-│   ├── main.py
-│   ├── rag_chain.py
-│   ├── ingest.py
-│   ├── requirements.txt
-│   └── vectorstore/ (created at runtime)
-├── frontend/
-│   ├── src/
-│   │   └── App.jsx
-│   ├── public/
-│   └── package.json
-├── screenshots/
-│   ├── 01-home.png
-│   ├── 02-chat-upload.png
-│   └── 03-error-ui.png
-└── README.md
-</pre>
-
----
 
 ## Use Cases
 
