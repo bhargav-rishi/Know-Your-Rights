@@ -150,15 +150,16 @@ async def upload_files(files: List[UploadFile] = File(...)):
     temp_dir = tempfile.gettempdir()
     for folder in os.listdir(temp_dir):
         if folder.startswith("session_"):
-                folder_path = os.path.join(temp_dir, folder)
-                try:
-                    modified_time = os.path.getmtime(folder_path)
-                    age_minutes = (now - modified_time) / 60
-                    if age_minutes > CLEANUP_THRESHOLD_MINUTES:
-                        shutil.rmtree(folder_path)
-                        print(f"🧹 Deleted old session folder: {folder_path}")
-                except Exception as cleanup_err:
-                    print(f"⚠️ Error during cleanup: {cleanup_err}")
+            folder_path = os.path.join(temp_dir, folder)
+            try:
+                modified_time = os.path.getmtime(folder_path)
+                age_minutes = (now - modified_time) / 60
+                if age_minutes > CLEANUP_THRESHOLD_MINUTES:
+                    shutil.rmtree(folder_path)
+                    print(f"🧹 Deleted old session folder: {folder_path}")
+            except Exception as cleanup_err:
+                print(f"⚠️ Error during cleanup: {cleanup_err}")
+
     try:
         if len(files) > MAX_FILES:
             return JSONResponse(
