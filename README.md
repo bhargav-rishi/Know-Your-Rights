@@ -17,12 +17,11 @@ Legal jargon can be overwhelming. Our chatbot simplifies it.
 
 ### Homepage (Initial View)
 ![Homepage](screenshots/01-home.png)
+![Homepage](screenshots/02-home.png)
 
 ### Legal Question Answering
-![Chat in Action](screenshots/02-chat-upload.png)
-
-### Timeout/Error Handling
-![Error UI](screenshots/03-error-ui.png)
+![Chat in Action](screenshots/03-chat-upload.png)
+![Chat in Action](screenshots/04-chat-upload.png)
 
 ---
 
