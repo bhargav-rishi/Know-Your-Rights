@@ -48,7 +48,7 @@ const handleSend = async () => {
   }, 10000); // 10 seconds
 
   try {
-    const res = await axios.post(api, {
+    const res = await axios.post(`${api}/chat`, {
       question: input,
     });
 
@@ -132,7 +132,7 @@ const handleFileUpload = async (e) => {
     setUploadMessage("📤 Uploading...");
     setUploadedFiles(files);
 
-    await axios.post(api, formData);
+    await axios.post(`${api}/upload`, formData);
 
     setUploadSuccess(true);
     setUploadMessage("✅ Upload successful!");
