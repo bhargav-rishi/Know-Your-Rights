@@ -17,7 +17,7 @@ function App() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [uploadSuccess, setUploadSuccess] = useState(false);
-  const api = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
+  const api = import.meta.env.VITE_BACKEND_URL;
 
 
 
